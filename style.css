@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.header {
+  background: #121314;
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.header-navbar,
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-list {
+  gap: 20px;
+}
+
+.navbar-logo {
+  width: 200px;
+}
+
+/* Main */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      hsla(212, 75%, 78%, 0.301),
+      hsla(276, 73%, 64%, 0.445)
+    ),
+    url(../assets/img/vw-bettle.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+
+  position: relative;
+  z-index: 1;
+}
+
+.hero_info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.hero_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  text-align: justify;
+}
+
+
+.hero_back-filter {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+}
+
+/* About Section */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #19224C;
+}
+
+
+.about_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px 0;
+  gap: 50px;
+}
+
+.history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.about_history-img {
+  border-radius: 20px;
+  width: 230px;
+}
+
+.about_history-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  width: 550px;
+}
+
+.about_container:nth-child(odd) {
+  justify-content: flex-end;
+}
+
+
+.about_history-text:nth-child(odd) {
+  align-items: flex-end;
+}
+
+.about_history-text:nth-child(even) {
+  align-items: flex-start;
+}
