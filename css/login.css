@@ -4,189 +4,105 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
   font-family: "Inter", sans-serif;
   text-decoration: none;
 }
 
-body {
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100vh;
-  padding: 30px;
-  border: 2px solid black;
-  background: #121314;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-
-.main__logo {
-  width: 350px;
-}
-
-.main__logform {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  border: 2px solid crimson;
-  padding: 40px;
-  border-radius: 38px;
-  position: absolute;
-  top: 65%;
-}
-
-#user,
-#password {
-  background: gray;
-  border: none;
-  border-radius: 20px;
-  height: 30px;
-  padding: 10px;
-}
-
-.form__btn {
-  border: none;
-  height: 30px;
-  border-radius: 20px;
-  background: gray;
-  margin-top: 20px;
-}
- */
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 320px;
-  border-radius: 0.75rem;
-  background-color: rgba(17, 24, 39, 1);
-  padding: 2rem;
-  color: rgba(243, 244, 246, 1);
-}
-
-.title {
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
 }
 
 .form {
-  margin-top: 1.5rem;
-}
-
-.input-group {
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.input-group label {
-  display: block;
-  color: rgba(156, 163, 175, 1);
-  margin-bottom: 4px;
-}
-
-.input-group input {
-  width: 100%;
-  border-radius: 0.375rem;
-  border: 1px solid rgba(55, 65, 81, 1);
-  outline: 0;
-  background-color: rgba(17, 24, 39, 1);
-  padding: 0.75rem 1rem;
-  color: rgba(243, 244, 246, 1);
-}
-
-.input-group input:focus {
-  border-color: rgba(167, 139, 250);
-}
-
-.forgot {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: rgba(156, 163, 175, 1);
-  margin: 8px 0 14px 0;
-}
-
-.forgot a,
-.signup a {
-  color: rgba(243, 244, 246, 1);
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.forgot a:hover,
-.signup a:hover {
-  text-decoration: underline rgba(167, 139, 250, 1);
-}
-
-.sign {
-  display: block;
-  width: 100%;
-  background-color: rgba(167, 139, 250, 1);
-  padding: 0.75rem;
-  text-align: center;
-  color: rgba(17, 24, 39, 1);
-  border: none;
-  border-radius: 0.375rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.social-message {
-  display: flex;
-  align-items: center;
-  padding-top: 1rem;
-}
-
-.line {
-  height: 1px;
-  flex: 1 1 0%;
-  background-color: rgba(55, 65, 81, 1);
-}
-
-.social-message .message {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: rgba(156, 163, 175, 1);
-}
-
-.social-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  background: #121314;
+  color: white;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      hsla(212, 75%, 78%, 0.301),
+      hsla(276, 73%, 64%, 0.445)
+    ),
+    url(../assets/img/background/vw-bettle.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
 }
 
-.social-icons .icon {
-  border-radius: 0.125rem;
-  padding: 0.75rem;
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.log_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  max-width: 750px;
+  width: 50%;
+}
+
+.logform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid black;
+  padding: 40px;
+  border-radius: 38px;
+  background: linear-gradient(to left, #c33764, #1d2671);
+}
+
+.logform_logo {
+  width: 200px;
+}
+
+.form_inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.form_inputs label {
+  display: none;
+}
+
+.form_input {
   border: none;
-  background-color: transparent;
-  margin-left: 8px;
+  background: transparent;
+  border-bottom: 1px solid white;
+  height: 30px;
+  width: 200px;
+  padding: 10px;
 }
 
-.social-icons .icon svg {
-  height: 1.25rem;
-  width: 1.25rem;
-  fill: #fff;
+input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid purple;
 }
 
-.signup {
-  text-align: center;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: rgba(156, 163, 175, 1);
+
+.form__btn {
+  border: 2px solid white;
+  color: white;
+  height: 30px;
+  width: 70%;
+  background: transparent;
+  border-radius: 20px;
 }
+
