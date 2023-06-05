@@ -241,7 +241,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .foot_link {
@@ -321,7 +321,7 @@ footer {
   }
 
   #service {
-    padding: 65px 45px;
+    padding: 65px 30px;
   }
 
   .service_info {
