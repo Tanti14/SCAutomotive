@@ -7,59 +7,57 @@
     <title>SC Automotive | Inicio</title>
     <link rel="icon" href="./assets/img/logo/icons8-mantenimiento-48.png" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="header">
-      <nav class="header-navbar">
-        <img
+      <a href="index.html"
+        ><img
           src="./assets/img/logo/logo-navbar.png"
           class="navbar-logo"
           alt="logo"
-        />
+      /></a>
+      <nav class="header-navbar">
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="navbar-list">
           <li><a href="#" class="navbar_link">Inicio</a></li>
           <li><a href="#service" class="navbar_link">Servicios</a></li>
           <li><a href="#about" class="navbar_link">Nosotros</a></li>
-          <li><a href="#location" class="navbar_link">¿Donde estamos?</a></li>
-          <li><a href="./pages/login.html"><img src="./assets/img/access/user.png" alt="login_icon"></a></li>
+          <li><a href="#contactus" class="navbar_link">Contacto</a></li>
         </ul>
+        <a href="./pages/login.html"
+          ><img src="./assets/img/access/user.png" alt="login_icon"
+        /></a>
       </nav>
     </header>
 
     <main class="main">
       <section id="hero" class="hero">
-        <div class="hero_info-container">
-          <div class="hero_info">
-            <h1 class="hero_info-h1">SC AUTOMOTIVE S.R.L</h1>
-            <p class="hero_info-p">
-              Somos una empresa familiar destinada al mantenimiento y a la
-              reparacion de vehiculos pertenecientes al grupo VAG, tanto de la
-              linea liviana como linea pesada. Estamos en el rubro hace mas de
-              20 años, contamos con la experiencia y las herramientas necesarias
-              para brindar trabajos de calidad.
-            </p>
-          </div>
-          <img
-            src="./assets/img/background/volkswagen-vw.png"
-            width="300px"
-            class="hero_img"
-            alt="Logo VW"
-          />
+        <div class="hero_info">
+          <h1 class="hero_info-h1">SC AUTOMOTIVE S.R.L</h1>
+          <p class="hero_info-p">
+            Somos una empresa familiar destinada al mantenimiento y a la
+            reparacion de vehiculos pertenecientes al grupo VAG, tanto de la
+            linea liviana como linea pesada. Estamos en el rubro hace mas de 20
+            años, contamos con la experiencia y las herramientas necesarias para
+            brindar trabajos de calidad.
+          </p>
         </div>
-        <div class="hero_back-filter"></div>
-        <div class="wave">
-          <svg
-            class="wave"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-          >
-            <path
-              fill="#19224C"
-              fill-opacity="1"
-              d="M0,224L48,224C96,224,192,224,288,208C384,192,480,160,576,154.7C672,149,768,171,864,186.7C960,203,1056,213,1152,208C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-            ></path>
-          </svg>
-        </div>
+        <img
+          src="./assets/img/background/volkswagen-logo.png"
+          width="300px"
+          class="hero_img"
+          alt="Logo VW"
+        />
       </section>
 
       <section id="service">
@@ -174,26 +172,12 @@
             />
           </div>
         </div>
-
-        <div class="wave">
-          <svg
-            class="wave"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-          >
-            <path
-              fill="black"
-              fill-opacity="1"
-              d="M0,224L48,224C96,224,192,224,288,208C384,192,480,160,576,154.7C672,149,768,171,864,186.7C960,203,1056,213,1152,208C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-            ></path>
-          </svg>
-        </div>
       </section>
 
       <section id="about">
-        <h2 class="about_title">UN POCO SOBRE NUESTRA HISTORIA</h1>
+        <h2 class="about_title">UN POCO SOBRE NUESTRA HISTORIA</h2>
         <div class="about_container">
-          <div class="about_history1 history">
+          <div class="about_history">
             <img
               src="./assets/img/about/roberto_ana_año2000.jpeg"
               class="about_history-img"
@@ -211,7 +195,7 @@
             </div>
           </div>
 
-          <div class="about_history2 history">
+          <div class="about_history">
             <div class="about_history-text">
               <h2>2001</h2>
               <p>
@@ -227,7 +211,7 @@
             />
           </div>
 
-          <div class="about_history1 history">
+          <div class="about_history">
             <img
               src="./assets/img/about/taller_mecanico.jpg"
               class="about_history-img"
@@ -243,7 +227,7 @@
             </div>
           </div>
 
-          <div class="about_history2 history">
+          <div class="about_history">
             <div class="about_history-text">
               <h2>2005</h2>
               <p>
@@ -260,7 +244,7 @@
             />
           </div>
 
-          <div class="about_history1 history">
+          <div class="about_history">
             <img
               src="./assets/img/about/empleado_taller.jpg"
               class="about_history-img"
@@ -276,7 +260,7 @@
             </div>
           </div>
 
-          <div class="about_history2 history">
+          <div class="about_history">
             <div class="about_history-text">
               <h2>2012</h2>
               <p>
@@ -293,7 +277,7 @@
             />
           </div>
 
-          <div class="about_history1 history">
+          <div class="about_history">
             <img
               src="./assets/img/about/santino_carla.jpeg"
               class="about_history-img"
@@ -310,7 +294,7 @@
             </div>
           </div>
 
-          <div class="about_history2 history">
+          <div class="about_history">
             <div class="about_history-text">
               <h2>2018</h2>
               <p>
@@ -327,7 +311,7 @@
             />
           </div>
 
-          <div class="about_history1 history">
+          <div class="about_history">
             <img
               src="./assets/img/about/SC_AUTOMOTIVE_20Aniversario.png"
               class="about_history-img"
@@ -345,7 +329,7 @@
             </div>
           </div>
 
-          <div class="about_history2 history">
+          <div class="about_history">
             <div class="about_history-text">
               <h2>2022</h2>
               <p>
@@ -362,7 +346,7 @@
             />
           </div>
 
-          <div class="about_history1 history">
+          <div class="about_history">
             <img
               src="./assets/img/about/actualidad_taller.jpeg"
               class="about_history-img"
@@ -385,31 +369,64 @@
         <span class="about_span">¡GRACIAS POR ELEGIRNOS!</span>
       </section>
 
-      <hr class="divider">
+      <hr class="divider" />
 
-      <section id="location">
-        <h2>¡VISITÁ NUESTRO TALLER!</h2>
-        <div class="location_container">
-          <div class="location_info">
+      <section id="contactus">
+        <h2 class="contactus_title">¡COMUNICATE CON NOSOTROS Y VISITÁ NUESTRO TALLER!</h2>
+        <div class="contact_container">
+          <div class="contact_info">
             <h2>San Miguel de Tucumán</h2>
             <div class="location_adress">
-              <img src="./assets/img/contact_location/map_ping.png" class="location_icons" alt="Google Maps Ping icon">
-            <p>Avenida Belgrano 3148</p>
+              <img
+                src="./assets/img/contact_location/map_ping.png"
+                class="location_icons"
+                alt="Google Maps Ping icon"
+              />
+              <p>Avenida Belgrano 3148</p>
             </div>
             <div class="location_email">
-              <img src="./assets/img/contact_location/email.png" class="location_icons" alt="Email icon">
+              <img
+                src="./assets/img/contact_location/email.png"
+                class="location_icons"
+                alt="Email icon"
+              />
               <p>scautomotive@contacto.com</p>
             </div>
             <div class="location_phone">
-              <img src="./assets/img/contact_location/phone.png" class="location_icons" alt="Phone icon">
+              <img
+                src="./assets/img/contact_location/phone.png"
+                class="location_icons"
+                alt="Phone icon"
+              />
               <p>381-1575692</p>
             </div>
           </div>
           <div class="location_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.9071041688094!2d-65.24373622532922!3d-26.811086388963737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225cff27f6d581%3A0x1c4e9b378c541c8f!2sAv.%20Manuel%20Belgrano%203148%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1685318904368!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.9071041688094!2d-65.24373622532922!3d-26.811086388963737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225cff27f6d581%3A0x1c4e9b378c541c8f!2sAv.%20Manuel%20Belgrano%203148%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1685318904368!5m2!1ses!2sar"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
     </main>
+
+    <footer>
+      <div>
+        <ul class="foot_links">
+          <li><a href="#" class="foot_link">Terminos y Condiciones</a></li>
+          <li><a href="#" class="foot_link">FAQ</a></li>
+          <li><a href="#" class="foot_link">Sumate a nuestro equipo</a></li>
+        </ul>
+      </div>
+      <span class="foot_span"
+        >DESIGNED BY SANTIAGO COSTANTI | 2023 &copy; All rights reserved
+      </span>
+    </footer>
   </body>
 </html>
