@@ -19,6 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: #121314;
+  /* background: linear-gradient(to left, #c33764, #1d2671); */
   width: 100%;
   height: 70px;
   padding: 0 30px;
@@ -56,7 +57,8 @@ header {
   align-items: center;
   width: 100%;
   color: white;
-  background: #161718;
+  /* background: #161718; */
+  background: linear-gradient(to left, #c33764, #1d2671);
 }
 
 /* Hero Section */
@@ -93,9 +95,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  width: 100%;
   gap: 50px;
   padding: 65px 0;
+  border-top: 3px solid black;
 }
 
 .service_container {
@@ -103,7 +106,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1000px;
+  width: 70%;
   gap: 70px;
 }
 
@@ -111,10 +114,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  background: gray;
+  gap: 20px;
+  background: rgb(54, 54, 54);
+  border: 2px solid #7700ff;
   padding: 30px;
   border-radius: 30px;
+  width: 100%;
 }
 
 .service_text {
@@ -122,6 +127,7 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: justify;
+  gap: 10px;
 }
 
 .service_img {
@@ -135,9 +141,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  width: 100%;
   gap: 70px;
   padding: 50px 0;
+  /* border-top: 5px solid black; */
 }
 
 .about_container {
@@ -145,7 +152,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 70%;
   gap: 60px;
 }
 
@@ -154,6 +161,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  width: 100%;
 }
 
 .about_history-img {
@@ -190,9 +198,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 70px 0;
+  padding: 60px 0;
   gap: 70px;
-  max-width: 1200px;
   width: 100%;
   color: white;
 }
@@ -201,7 +208,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 80%;
 }
 
 .contact_info {
@@ -233,7 +240,7 @@ footer {
   width: 100%;
   padding: 30px 0;
   gap: 10px;
-  background: #161718;
+  background: #121314;
   color: white;
 }
 
@@ -267,15 +274,21 @@ footer {
     right: -2px;
     width: 25%;
     flex-direction: column;
-    background-color: gray;
-    border: 2px solid red;
+    background-color: #121314;
+    border: 2px solid #c33764;
     border-top: 0;
     border-radius: 0 0 0 15px;
     align-items: center;
     padding: 45px 30px;
     gap: 25px;
     z-index: 2;
-    display: none;
+    /* display: none; */
+    transform: translateX(200%);
+    transition: all 0.2s ease;
+  }
+
+  .navbar_link:hover {
+    text-decoration: underline;
   }
 
   .menu-label {
@@ -285,13 +298,13 @@ footer {
   }
 
   #menu-toggle:checked + .navbar-list {
-    display: flex;
+    /* display: flex; */
+    transform: translateX(0);
   }
 
   .hero {
     flex-direction: column;
-    max-width: 990px;
-    padding: 30px 0 40px 0;
+    padding: 80px 0;
     height: auto;
   }
 
@@ -307,15 +320,24 @@ footer {
     width: 200px;
   }
 
-  #service {
-    max-width: 990px;
-    padding: 60px 80px;
+  /* #service {
+    padding: 80px 0;
+  } */
+
+  .service_container {
+    width: 80%;
+  }
+
+  #about {
+    padding: 65px 0;
+  }
+
+  .about_container {
+    width: 80%;
   }
 }
 
-
 @media (max-width: 576px) {
-
   .hero_info {
     padding: 30px 30px;
   }
@@ -343,6 +365,10 @@ footer {
     width: 150px;
   }
 
+  .about_history p {
+    font-size: 12px;
+  }
+
   .contactus_title {
     font-size: 22px;
     text-align: center;
@@ -354,5 +380,51 @@ footer {
     align-items: center;
     gap: 40px;
   }
+}
 
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .hero {
+    padding: 70px 40px;
+  }
+  #service {
+    padding: 60px 25px;
+  }
+
+  .service_container {
+    width: 85%;
+  }
+
+  .service_info {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .service_text {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service_title {
+    font-size: 20px;
+  }
+
+  .service_img {
+    width: 400px;
+  }
+
+  .about_history p {
+    font-size: 12px;
+  }
+
+  #contactus {
+    gap: 50px;
+  }
+
+  .contactus_title {
+    font-size: 18px;
+  }
+  .contact_container {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
