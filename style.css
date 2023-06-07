@@ -343,13 +343,17 @@ footer {
   }
 
   #service {
-    padding: 65px 30px;
+    padding: 65px 0;
   }
 
   .service_info {
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
     border-radius: 30px;
+  }
+
+  .service_img {
+    width: 100%;
   }
 
   .about_title {
