@@ -335,6 +335,15 @@ footer {
   .about_container {
     width: 80%;
   }
+
+  .foot_link {
+    color: white;
+    font-size: 10px;
+  }
+  
+  .foot_span {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 576px) {
